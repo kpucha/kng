@@ -5,14 +5,23 @@ import { PublicRoutingModule } from './public-routing.module';
 import { GitgraphCvComponent } from './components/gitgraph-cv/gitgraph-cv.component';
 import { MaterialModule } from '../material/material.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AboutHeaderComponent } from './components/about-header/about-header.component';
+import { AboutXpCardComponent } from './components/about-xp-card/about-xp-card.component';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @NgModule({
-  declarations: [AboutComponent, GitgraphCvComponent],
+  declarations: [
+    AboutComponent,
+    GitgraphCvComponent,
+    AboutHeaderComponent,
+    AboutXpCardComponent,
+  ],
   imports: [
     CommonModule,
     PublicRoutingModule,
     MaterialModule,
     FontAwesomeModule,
+    NgxEchartsModule,
   ],
   exports: [],
 })

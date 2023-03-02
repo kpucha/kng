@@ -11,6 +11,7 @@ import { HttpClientModule, HttpBackend } from '@angular/common/http';
 import { MaterialModule } from './modules/material/material.module';
 import { PublicModule } from './modules/public/public.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 export function HttpLoaderFactory(httpBackend: HttpBackend) {
   return new MultiTranslateHttpLoader(httpBackend, [
@@ -37,6 +38,9 @@ export function HttpLoaderFactory(httpBackend: HttpBackend) {
     }),
     LayoutModule,
     FontAwesomeModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts'),
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
