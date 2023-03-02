@@ -46,6 +46,10 @@ export class GitgraphCvComponent implements OnInit {
         displayHash: false,
         displayAuthor: false,
       },
+      dot: {
+        size: 8,
+        strokeWidth: 1,
+      },
     },
   });
 
