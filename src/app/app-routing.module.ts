@@ -5,10 +5,10 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'about',
+    redirectTo: 'home',
   },
   {
-    path: 'about',
+    path: '',
     loadChildren: () =>
       import('./modules/public/public.module').then((m) => m.PublicModule),
   },

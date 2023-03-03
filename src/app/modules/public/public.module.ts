@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutHeaderComponent } from './components/about-header/about-header.component';
 import { AboutXpCardComponent } from './components/about-xp-card/about-xp-card.component';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
     GitgraphCvComponent,
     AboutHeaderComponent,
     AboutXpCardComponent,
+    HomeComponent,
   ],
   imports: [
     CommonModule,

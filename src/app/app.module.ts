@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ export function HttpLoaderFactory(httpBackend: HttpBackend) {
     MaterialModule,
     PublicModule,
     HttpClientModule,
+    ServiceWorkerModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

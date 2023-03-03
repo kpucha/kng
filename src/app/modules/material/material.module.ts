@@ -17,6 +17,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const components: any[] = [
   ReactiveFormsModule,
@@ -36,6 +37,7 @@ const components: any[] = [
   MatSidenavModule,
   MatExpansionModule,
   MatDialogModule,
+  FlexLayoutModule,
 ];
 
 @NgModule({
