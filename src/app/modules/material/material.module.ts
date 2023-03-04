@@ -18,6 +18,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CdkTreeModule } from '@angular/cdk/tree';
+import { MatTreeModule } from '@angular/material/tree';
 
 const components: any[] = [
   ReactiveFormsModule,
@@ -38,6 +40,8 @@ const components: any[] = [
   MatExpansionModule,
   MatDialogModule,
   FlexLayoutModule,
+  CdkTreeModule,
+  MatTreeModule,
 ];
 
 @NgModule({

@@ -1,8 +1,24 @@
-<mat-toolbar class="primary-toolbar">
-  <span>kpucha.dev</span>
-  <span class="fill-remaining-space"></span>
-  <button mat-button>BLOG</button>
-  <button mat-button>ABOUT</button>
-  <span class="fill-remaining-space"></span>
-  <app-switch></app-switch>
-</mat-toolbar>
+<header class="primary-toolbar">
+  <mat-toolbar>
+    <span class="handwrite">kpucha.dev</span>
+    <span class="fill-remaining-space"></span>
+    <nav mat-tab-nav-bar [tabPanel]="tabPanel" color="accent">
+      <a
+        mat-tab-link
+        *ngFor="let link of menus"
+        (click)="activeLink = link.url"
+        [active]="activeLink == link.url"
+        class="handwrite"
+      >
+        <mat-icon class="example-tab-icon" color="accent">{{
+          link.icon
+        }}</mat-icon>
+        {{ link.name }}
+      </a>
+      <!-- <a mat-tab-link disabled>Disabled Link</a> -->
+    </nav>
+    <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+    <span class="fill-remaining-space"></span>
+    <app-switch></app-switch>
+  </mat-toolbar>
+</header>

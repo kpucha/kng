@@ -1,0 +1,7 @@
+<fa-icon
+  class="breath-right"
+  *ngIf="isFA(icon)"
+  [icon]="getIconByName(icon.name)"
+  #faIcon
+></fa-icon>
+<mat-icon class="breath-right" *ngIf="!isFA(icon)">{{ icon.name }}</mat-icon>

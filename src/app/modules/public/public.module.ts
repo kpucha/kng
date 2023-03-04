@@ -9,6 +9,7 @@ import { AboutHeaderComponent } from './components/about-header/about-header.com
 import { AboutXpCardComponent } from './components/about-xp-card/about-xp-card.component';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { HomeComponent } from './components/home/home.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HomeComponent } from './components/home/home.component';
     MaterialModule,
     FontAwesomeModule,
     NgxEchartsModule,
+    FlexLayoutModule,
   ],
   exports: [],
 })

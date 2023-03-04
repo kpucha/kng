@@ -35,3 +35,8 @@ $theme-light-off: mat.define-dark-theme(
 .light-off {
   @include mat.all-component-themes($theme-light-off);
 }
+
+@font-face {
+  font-family: "ArchitectsDaughter";
+  src: url("../fonts/ArchitectsDaughter-Regular.ttf") format("truetype");
+}

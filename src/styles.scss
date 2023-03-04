@@ -10,6 +10,15 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+.main {
+  z-index: 0.9;
+}
+.handwrite {
+  font-family: "ArchitectsDaughter";
+}
+.half {
+  transform: scale(0.5);
+}
 .fill-remaining-space {
   flex: 1 1 auto;
 }
