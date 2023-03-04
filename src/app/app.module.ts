@@ -14,10 +14,10 @@ import { PublicModule } from './modules/public/public.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { MatIconRegistry } from '@angular/material/icon';
-import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 export function HttpLoaderFactory(httpBackend: HttpBackend) {
   return new MultiTranslateHttpLoader(httpBackend, [
@@ -55,6 +55,8 @@ export function HttpLoaderFactory(httpBackend: HttpBackend) {
       registrationStrategy: 'registerWhenStable:30000',
     }),
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
+    AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
