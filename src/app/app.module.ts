@@ -23,6 +23,8 @@ import {
   ScreenTrackingService,
   UserTrackingService,
 } from '@angular/fire/analytics';
+import { AdminModule } from './modules/admin/admin.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 export function HttpLoaderFactory(httpBackend: HttpBackend) {
   return new MultiTranslateHttpLoader(httpBackend, [
@@ -60,6 +62,8 @@ export function HttpLoaderFactory(httpBackend: HttpBackend) {
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
+    AdminModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

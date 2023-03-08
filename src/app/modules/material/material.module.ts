@@ -20,6 +20,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CdkTreeModule } from '@angular/cdk/tree';
 import { MatTreeModule } from '@angular/material/tree';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 const components: any[] = [
   ReactiveFormsModule,
@@ -42,6 +44,8 @@ const components: any[] = [
   FlexLayoutModule,
   CdkTreeModule,
   MatTreeModule,
+  MatTableModule,
+  MatPaginatorModule,
 ];
 
 @NgModule({

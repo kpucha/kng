@@ -1,6 +1,7 @@
 import { Link } from '../interfaces/link.interface';
 import { MenuSection } from '../interfaces/menu-section.interface';
 import { LINKS } from './link.constants';
+import { TAG } from './tag.constants';
 
 export class APP {
   public static NAME: string = 'Kpucha.dev';
@@ -10,31 +11,55 @@ export class APP {
   };
   public static MENU: MenuSection[] = [
     {
-      link: LINKS.DEV,
+      tag: {
+        type: 'group',
+        name: 'byBranch',
+        desc: 'Por rama',
+        icon: {
+          name: 'signpost',
+        },
+      },
       children: [
-        { link: LINKS.FRONT },
-        { link: LINKS.BACK },
-        { link: LINKS.DEVOPS },
-        { link: LINKS.BBDD },
+        { tag: TAG.FRONT },
+        { tag: TAG.BACK },
+        { tag: TAG.DEVOPS },
+        { tag: TAG.DDBB },
+        { tag: TAG.AI },
+        { tag: TAG.IOT },
+        { tag: TAG.CLOUD },
       ],
     },
     {
-      link: LINKS.IA,
+      tag: {
+        type: 'group',
+        name: 'byFramework',
+        desc: 'Por Framework',
+        icon: { name: 'activity_zone' },
+      },
       children: [
-        { link: LINKS.IA },
-        { link: LINKS.IOT },
-        { link: LINKS.CLOUD },
+        { tag: TAG.ANGULAR },
+        { tag: TAG.EXPRESS },
+        { tag: TAG.SPRING },
+        { tag: TAG.TENSORFLOW },
+        { tag: TAG.PYTORCH },
       ],
     },
     {
-      link: LINKS.IOT,
-    },
-    {
-      link: LINKS.CLOUD,
+      tag: {
+        type: 'group',
+        name: 'byLang',
+        desc: 'Por lenguaje',
+        icon: { name: 'frame_source' },
+      },
       children: [
-        { link: LINKS.GCP },
-        { link: LINKS.AWS },
-        { link: LINKS.AZURE },
+        { tag: TAG.TYPESCRIPT },
+        { tag: TAG.JAVA },
+        { tag: TAG.PYTHON },
+        { tag: TAG.PHP },
+        { tag: TAG.JAVASCRIPT },
+        { tag: TAG.HTML },
+        { tag: TAG.CSS },
+        { tag: TAG.CLI },
       ],
     },
   ];

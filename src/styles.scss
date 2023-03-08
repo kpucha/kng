@@ -19,6 +19,28 @@ body {
 .half {
   transform: scale(0.5);
 }
+.double {
+  transform: scale(2);
+}
 .fill-remaining-space {
   flex: 1 1 auto;
+}
+.fit-sidenav {
+  height: calc(100vh - 128px);
+  min-height: calc(100vh - 128px);
+  max-height: calc(100vh - 128px);
+}
+.mat-drawer-content {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.mat-drawer-content::-webkit-scrollbar {
+  //display: none !important;
+  width: 5px;
+  background: $primary-color;
+}
+.mat-drawer-content::-webkit-scrollbar-thumb {
+  background: $accent-color;
+  width: 5px;
 }

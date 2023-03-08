@@ -8,16 +8,23 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconComponent } from './components/icon/icon.component';
+import { AuthModule } from '../auth/auth.module';
 
 @NgModule({
-  declarations: [ToolbarComponent, SwitchComponent, SidenavComponent, IconComponent],
+  declarations: [
+    ToolbarComponent,
+    SwitchComponent,
+    SidenavComponent,
+    IconComponent,
+  ],
   imports: [
     CommonModule,
     FontAwesomeModule,
     MaterialModule,
     RouterModule,
     TranslateModule,
+    AuthModule,
   ],
-  exports: [ToolbarComponent, SidenavComponent],
+  exports: [ToolbarComponent, SidenavComponent, IconComponent],
 })
 export class LayoutModule {}

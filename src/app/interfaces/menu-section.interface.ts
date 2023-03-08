@@ -1,6 +1,6 @@
-import { Link } from './link.interface';
+import { Tag } from './tag.interface';
 
 export interface MenuSection {
-  link: Link;
+  tag: Tag;
   children?: MenuSection[];
 }

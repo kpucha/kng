@@ -1,11 +1,18 @@
 <app-toolbar></app-toolbar>
 <main class="main">
-  <mat-sidenav-container>
+  <mat-sidenav-container class="fit-sidenav">
     <app-sidenav></app-sidenav>
     <mat-sidenav mode="side" opened>
       <app-sidenav></app-sidenav>
     </mat-sidenav>
-    <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+    <mat-sidenav *ngIf="this.isBig" mode="side" position="end" opened>
+      <app-sidenav></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
   </mat-sidenav-container>
 </main>
-<footer class="primary-footer"><mat-toolbar>footer</mat-toolbar></footer>
+<footer class="primary-footer">
+  <mat-toolbar>footer - IS SMALL => {{ isSmall }}</mat-toolbar>
+</footer>

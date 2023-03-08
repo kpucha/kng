@@ -20,8 +20,8 @@ export class SidenavComponent implements AfterViewInit {
   private _transformer = (node: MenuSection, level: number) => {
     return {
       expandable: !!node.children && node.children.length > 0,
-      name: node.link.name,
-      icon: node.link.icon,
+      name: node.tag.desc,
+      icon: node.tag.icon,
       level: level,
     };
   };
@@ -44,7 +44,7 @@ export class SidenavComponent implements AfterViewInit {
     this.dataSource.data = this.MENU;
   }
   ngAfterViewInit(): void {
-    this.tree.treeControl.expandAll();
+    //this.tree.treeControl.expandAll();
   }
 
   hasChild = (_: number, node: MenuFlatNode) => node.expandable;

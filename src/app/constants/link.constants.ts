@@ -76,10 +76,73 @@ export class LINKS {
     },
   };
   public static BBDD: Link = {
-    name: 'BBDD',
-    url: '/bbdd',
+    name: 'Data',
+    url: '/data',
     icon: {
       name: 'database',
+    },
+  };
+  public static BYBRANCH: Link = {
+    name: 'Por rama',
+    url: '',
+    icon: {
+      name: 'codeBranch',
+      lib: 'fontawesome',
+    },
+  };
+  public static BYLANG: Link = {
+    name: 'Por lenguaje',
+    url: '',
+    icon: {
+      name: 'frame_source',
+    },
+  };
+  public static PYTHON: Link = {
+    name: 'Python',
+    url: '/python',
+    icon: {
+      name: 'python',
+      lib: 'fontawesome',
+    },
+  };
+  public static TS: Link = {
+    name: 'Typescript',
+    url: '/typescript',
+    icon: {
+      name: 'js',
+      lib: 'fontawesome',
+    },
+  };
+  public static JS: Link = {
+    name: 'Javascript',
+    url: '/javascript',
+    icon: {
+      name: 'js',
+      lib: 'fontawesome',
+    },
+  };
+  public static JAVA: Link = {
+    name: 'Java',
+    url: '/java',
+    icon: {
+      name: 'java',
+      lib: 'fontawesome',
+    },
+  };
+  public static HTML: Link = {
+    name: 'HTML',
+    url: '/html',
+    icon: {
+      name: 'html',
+      lib: 'fontawesome',
+    },
+  };
+  public static CSS: Link = {
+    name: 'CSS',
+    url: '/css',
+    icon: {
+      name: 'css',
+      lib: 'fontawesome',
     },
   };
 }
