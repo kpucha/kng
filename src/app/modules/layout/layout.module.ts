@@ -9,6 +9,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconComponent } from './components/icon/icon.component';
 import { AuthModule } from '../auth/auth.module';
+import { PublicModule } from '../public/public.module';
+import { TagTreeComponent } from './components/tag-tree/tag-tree.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { AuthModule } from '../auth/auth.module';
     SwitchComponent,
     SidenavComponent,
     IconComponent,
+    TagTreeComponent,
   ],
   imports: [
     CommonModule,
@@ -24,6 +27,7 @@ import { AuthModule } from '../auth/auth.module';
     RouterModule,
     TranslateModule,
     AuthModule,
+    PublicModule,
   ],
   exports: [ToolbarComponent, SidenavComponent, IconComponent],
 })

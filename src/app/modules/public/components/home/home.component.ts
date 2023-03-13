@@ -21,7 +21,7 @@ export class HomeComponent {
   }
 
   getCardsSize() {
-    if (this.isBig) return '25%';
+    if (this.isBig) return '33%';
     if (this.isMed) return '50%';
     if (this.isSmall) return '100%';
     return '33%';

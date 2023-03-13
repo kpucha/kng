@@ -10,6 +10,7 @@ import { AboutXpCardComponent } from './components/about-xp-card/about-xp-card.c
 import { NgxEchartsModule } from 'ngx-echarts';
 import { HomeComponent } from './components/home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { LandingComponent } from './components/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AboutHeaderComponent,
     AboutXpCardComponent,
     HomeComponent,
+    LandingComponent,
   ],
   imports: [
     CommonModule,
